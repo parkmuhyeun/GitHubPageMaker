@@ -9,3 +9,5 @@ subclass: 'post page'
 ---
 
 about page
+
++빌드 및 배포 자동화를 실행
