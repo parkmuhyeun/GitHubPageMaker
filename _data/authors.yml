@@ -1,0 +1,11 @@
+parkmuhyeun :
+  username: parkmuhyeun # user name : martin
+  name: parkmuhyeun     # user full name : Martin Luther King
+  url_full:             # Homepage url
+  url:
+  bio: <a href="https://github.com/parkmuhyeun">github</a>
+  # 회사정보
+  picture: assets/built/images/author-logo.jpg   # author image
+  facebook:             # facebook ID
+  twitter:              # twitter ID
+  cover: False
