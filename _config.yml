@@ -84,6 +84,28 @@ permalink:             /:categories/:year-:month-:day-:title/
 paginate:              10
 paginate_path:         /:num/
 
+# 최종적으로 blog가 운영될 url
+production_url: https://parkmuhyeun.github.io
+
+# blogmaker(jekyll source folder)에 대한 github repository
+source_url: https://github.com/parkmuhyeun/GitHubPageMaker/
+
+# Travis-CI 설정입니다.
+safe: False
+lsi: False
+
+username: parkmuhyeun
+repo: GitHubPageMaker
+# username : travis-ci와 연동하는 github의 username
+# repo: travis-ci와 연동하는 github의 repository이름
+# https://github.com/<username>/<repository>
+
+branch: master
+# 사용할 branch명
+
+relative_source:
+
+destination: ./output/
 
 # Theme
 # ---------------------------------------------------------------------------------------

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Example1-post1
+title: 빌드 및 배포 자동화 실행 ^^7
 subtitle: 부제목 예시
 tags: 태그
 description: >
@@ -12,6 +12,8 @@ categories:
 ---
 
 # Example1-post1
+
+빌드 및 배포 자동화 실행 ^^7
 
 Cum sociis natoque penatibus et magnis <a href="#">dis parturient montes</a>, nascetur ridiculus mus. *Aenean eu leo quam.* Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.
 
