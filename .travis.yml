@@ -7,7 +7,7 @@ rvm:
 before_install:
   - gem install bundler
 
-before install:
+install:
   # Install Jekyll and dependencies
   - bundle install
 
