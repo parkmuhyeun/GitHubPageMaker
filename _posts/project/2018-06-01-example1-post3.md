@@ -10,7 +10,7 @@ related_posts:
   - /example/2012-02-07-example-content/
 sitemap: false
 categories:
-  - example1
+  - project
 ---
 
 # Example1-post3

@@ -8,7 +8,7 @@ description: >
 sitemap: false
 hide_last_modified: false
 categories:
-  - example1
+  - project
 ---
 
 # Example1-post1
