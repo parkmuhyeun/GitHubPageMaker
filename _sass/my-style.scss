@@ -1,0 +1,17 @@
+// for top-menu
+.top-menu-wrapper{
+    display: inline-block;
+}
+.top-menu{
+  overflow-x: auto;       // overflow-x 속성은 x축, 즉 왼쪽과 오른쪽의 내용이 더 길 때(가로),
+  overflow-y: hidden;     // overflow-y 속성은 y축, 즉 위와 아래의 내용이 더 길때 (세로) 어떻게 보일지 선택하는 속성
+  white-space: nowrap;    // white-space는 스페이스와 탭, 줄바꿈, 자동줄바꿈을 어떻게 처리할지 정하는 속성, nowrap : 병합
+}
+
+// for top-menu
+.top-menu.nav-btn{
+  border: none;
+  display: inline-flex; // Flex는 요소의 크기가 불분명하거나 동적인 경우에도, 각 요소를 정렬할 수 있는 효율적인 방법을 제공, Inline 특성의 Flex Container를 정의
+  width: 6rem;          // inline-flex : Inline(Inline Block) 요소와 같은 성향(수평 쌓임)
+  margin-left: -1px;
+}

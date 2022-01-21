@@ -107,6 +107,23 @@ relative_source:
 
 destination: ./output/
 
+tipue_search:
+
+     include:
+
+         pages: false
+
+         collections: []
+
+     exclude:
+
+         files: [search.html, index.html, tags.html]
+
+         categories: []
+
+         tags: []
+
+
 # Theme
 # ---------------------------------------------------------------------------------------
 
