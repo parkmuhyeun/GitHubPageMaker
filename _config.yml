@@ -52,8 +52,12 @@ menu:
     url:               /about/
   - title:             Project
     url:               /project/
+    
   - title:             Study
     url:               /study/
+    submenu:
+      - title:       Spring
+        url:         /spring/
   - title:             Etc
     url:               /etc/
   # - title:            Subcat

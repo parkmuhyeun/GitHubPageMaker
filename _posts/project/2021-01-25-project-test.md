@@ -1,6 +1,6 @@
 ---
 layout: post
-title: etc 게시판 테스트
+title: project 게시판 테스트
 subtitle: 부제목 예시
 tags: 
 description: >
@@ -8,7 +8,7 @@ description: >
 sitemap: false
 hide_last_modified: false
 categories:
-  - etc
+  - project
 ---
 
-etc 게시판 테스트
+project 게시판 테스트
