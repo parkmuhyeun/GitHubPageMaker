@@ -58,6 +58,9 @@ menu:
     submenu:
       - title:       Spring
         url:         /spring/
+    submenu:
+      - title:       Spring Security
+        url:         /spring-security/
   - title:             Etc
     url:               /etc/
   # - title:            Subcat

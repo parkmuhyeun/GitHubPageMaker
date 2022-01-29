@@ -23,5 +23,7 @@ sitemap: false
 ---
 
 * [Spring]{:.heading.flip-title}
+* [Spring-Security]{:.heading.flip-title}
 
 [Spring]: /spring/
+[Spring-Security]: /spring-security/
