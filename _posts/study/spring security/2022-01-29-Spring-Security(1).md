@@ -24,7 +24,7 @@ categories:
 - 보안과 관련해서 많은 기능을 제공해주기 때문에 개발자가 직접 보안 관련 로직을 작성하지 않아도 되는 장점이 있다.
 
 ## Architecture
-아래 그림은 Spring Security Architecture이다. 구현 과정은 다음 글에서 설명하겠다.
+아래 그림은 Spring Security Architecture이다.
 
 ![img](/assets/img/blog/study/spring-security/Spring-Security(1)_1.PNG)
 
@@ -55,7 +55,7 @@ categories:
 - 인증 성공 시 얻은 Authentication 객체를 SecurityContext에 저장 후 AuthenticationSuccessHandler 실행
 - 인증 실패시, AuthenticationFailureHandler 실행
 
-[AuthenticationFilter]: /study/spring%20security/2021-01-28-Spring-Security(1)/#authenticationfilter
+[AuthenticationFilter]: /study/spring%20security/2022-01-29-Spring-Security(1)/#authenticationfilter
 
 ### UsernamePasswordAuthenticationToken
 - 사용자의 id가 Principal 역활을 하고, password가 Credential의 역활을 한다.
@@ -92,7 +92,7 @@ public abstract class AbstractAuthenticationToken implements Authentication, Cre
 }
 ```
 
-[UsernamePasswordAuthenticationToken]: /study/spring%20security/2021-01-28-Spring-Security(1)/#usernamepasswordauthenticationtoken
+[UsernamePasswordAuthenticationToken]: /study/spring%20security/2022-01-29-Spring-Security(1)/#usernamepasswordauthenticationtoken
 
 ### AuthenticationManager
 인증에 대한 부분은 SpringSecurity의 AuthenticationManager를 통해 처리하게 되는데, 실질적으로는 AuthenticationManager에 등록된 AuthenticationProvider에 의해 처리된다.
@@ -165,7 +165,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 }
 ```
 
-[AuthenticationManager]: /study/spring%20security/2021-01-28-Spring-Security(1)/#authenticationmanager
+[AuthenticationManager]: /study/spring%20security/2022-01-29-Spring-Security(1)/#authenticationmanager
 
 ### AuthenticationProvider
 AuthenticationProvider에서는 실제 인증에 대한 부분을 처리하는데, 인증 전의 인증용 객체를 받아서 5,6,7,8 과정을 거쳐서 인증이 완료된 객체를 반환하는 역활은 한다. 아래와 같은 AuthenticationProvider 인터페이스를 구현해서 Custom한 AuthenticationProvider을 작성해서 바로 위에 설명한 방법처럼 AuthenticationManager에 등록하면 된다.
@@ -223,7 +223,7 @@ public class CustomAuthenticationProvider implements AuthenticationProvider{
 }
 ```
 
-[AuthenticationProvider]: /study/spring%20security/2021-01-28-Spring-Security(1)/#authenticationprovider
+[AuthenticationProvider]: /study/spring%20security/2022-01-29-Spring-Security(1)/#authenticationprovider
 
 ### Authentication
 Authentication은 현재 접근하는 주체의 정보와 권한을 담는 인터페이스. Authentication 객체는 SecurityContext에 저장되며 SecurityContextHolder를 통해 SecurityContext에 접근하고 SecurityContext를 통해 Authentication에 접근 할 수 있다.
@@ -250,7 +250,7 @@ public interface Authentication extends Principal, Serializable {
 }
 ```
 
-[Authentication]: /study/spring%20security/2021-01-28-Spring-Security(1)/#authentication
+[Authentication]: /study/spring%20security/2022-01-29-Spring-Security(1)/#authentication
 
 ### UserDetailsService
 UserDetailsService 인터페이스는 DB에서 유저 정보를 가져오는 역활
@@ -263,7 +263,7 @@ public interface UserDetailsService {
   }
 ```
 
-[UserDetailsService]: /study/spring%20security/2021-01-28-Spring-Security(1)/#userdetailsservice
+[UserDetailsService]: /study/spring%20security/2022-01-29-Spring-Security(1)/#userdetailsservice
 
 ### UserDetails
 사용자의 정보를 담는 인터페이스, 구현해서 사용하면 됨
@@ -283,13 +283,13 @@ public interface UserDetails extends Serializable {
 
 }
 ```
-[UserDetails]: /study/spring%20security/2021-01-28-Spring-Security(1)/#userdetails
+[UserDetails]: /study/spring%20security/2022-01-29-Spring-Security(1)/#userdetails
 
 ### SecurityContextHolder
 - SecurityContextHolder는 보안 주체의 세부 정보를 포함하여 응용프로그램의 현재 보안 컨텍스트에 대한 세부 정보가 저장.
 - SecurityContext는 Authentication을 보관하는 역활을 하며, SecurityContext를 통해 Authentication 객체를 꺼내올 수 있다.
 
-[SecurityContextHolder]: /study/spring%20security/2021-01-28-Spring-Security(1)/#securitycontextholder
+[SecurityContextHolder]: /study/spring%20security/2022-01-29-Spring-Security(1)/#securitycontextholder
 
 --- 
 이론 설명은 여기까지입니다. 최대한 쉽게 풀어 쓸려고 말을 많이 붙이다 보니 길어졌는 데 도움이 됐는지 모르겠네요ㅜㅜ 다음 글에서는 구현 과정을 설명하겠습니다!
