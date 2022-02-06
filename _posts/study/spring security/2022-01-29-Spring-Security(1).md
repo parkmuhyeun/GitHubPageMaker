@@ -15,7 +15,7 @@ categories:
 ---
 인터넷을 보고 프로젝트에 Spring Security를 적용시켜봐도 UserDetails, Principal, AuthenticationProvider 등등.. 이게 도대체 무슨 말이야? 도무지 이해가 가지않았던 스프링 시큐리티. 동작 과정을 처음부터 상세하게 이해하고 적용해보자. 처음 보면 어려운게 당연하니 반복해서 학습하자.
 
-+구현하는 방법에는 간단하게 구현하는 것(AuthenticationProvider 직접 구현x)도 있고 직접 커스텀해서 하는 방법 (AuthenticationProvider를 직접 구현)도 있기 때문에 그런 디테일한 부분들은 다음 글(구현과정)에서 설명하겠다.
++구현하는 방법에는 간단하게 구현하는 것(AuthenticationProvider 직접 구현x)도 있고 직접 커스텀해서 하는 방법 (AuthenticationProvider를 직접 구현)도 있기 때문에 그런 디테일한 부분들은 [다음 글]에서 설명하겠다.
 
 ----
 
@@ -292,7 +292,9 @@ public interface UserDetails extends Serializable {
 [SecurityContextHolder]: /study/spring%20security/2022-01-29-Spring-Security(1)/#securitycontextholder
 
 --- 
-이론 설명은 여기까지입니다. 최대한 쉽게 풀어 쓸려고 말을 많이 붙이다 보니 길어졌는 데 도움이 됐는지 모르겠네요ㅜㅜ 다음 글에서는 구현 과정을 설명하겠습니다!
+이론 설명은 여기까지입니다. 최대한 쉽게 풀어 쓸려고 말을 많이 붙이다 보니 길어졌는 데 도움이 됐는지 모르겠네요ㅜㅜ [다음 글]에서는 구현 과정을 설명하겠습니다!
+
+[다음 글]: https://parkmuhyeun.github.io/study/spring%20security/2022-02-06-Spring-Security(2)
 
 ---
 
