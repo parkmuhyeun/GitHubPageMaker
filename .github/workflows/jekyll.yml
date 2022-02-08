@@ -1,0 +1,16 @@
+name: Jekyll site CI
+
+on: push
+jobs:
+  build_and_deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 'checkout'
+        uses: actions/checkout@v2
+      - name: 'build and deploy'
+        uses: shalzz/zola-deploy-action@v0.13.0
+        env:
+          PAGES_BRANCH: master
+          BUILD_DIR: .
+          TOKEN: ${{ secrets.JEKYLL_PAT }}
+          REPOSITORY: parkmuhyeun/parkmuhyeun.github.io
