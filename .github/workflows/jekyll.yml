@@ -1,0 +1,29 @@
+name: Jekyll build & deploy
+
+on: push
+
+jobs:
+  build_and_deploy:
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: 🛎 Check out master
+        uses: actions/checkout@master
+      - name: 🧪 Build and deploy
+        uses: victoriadrake/jekyll-cd@master
+#         env:
+#           PAGES_BRANCH: master
+#           BUILD_DIR: .
+#           TOKEN: ${{ secrets.JEKYLL_PAT }}
+#           REPOSITORY: parkmuhyeun/parkmuhyeun.github.io
+      - name: Pushes to another repository
+        uses: cpina/github-action-push-to-another-repository@main
+        env:
+          API_TOKEN_GITHUB: ${{ secrets.JEKYLL_PAT }}
+        with:
+          source-directory: 'docs'
+          destination-github-username: 'parkmuhyeun'
+          destination-repository-name: 'parkmuhyeun.github.io'
+          user-email: pjhg410@gmail.com
+          target-branch: master
