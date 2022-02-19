@@ -47,7 +47,7 @@ Powered by Hydejack v9.1.5 <https://hydejack.com/>
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="스프링 컨테이너와 스프링 빈" />
 <script type="application/ld+json">
-{"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://parkmuhyeun.github.io/assets/img/logo.jpg"},"name":"Muhyeun Park"},"headline":"스프링 컨테이너와 스프링 빈","url":"https://parkmuhyeun.github.io/study/spring/2022-02-18-Spring(3)/","dateModified":"2022-02-18T13:39:48+00:00","datePublished":"2022-02-18T00:00:00+00:00","author":{"@type":"Person","name":"Muhyeun Park"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://parkmuhyeun.github.io/study/spring/2022-02-18-Spring(3)/"},"@type":"BlogPosting","description":"Spring Container, Spring Bean","@context":"https://schema.org"}</script>
+{"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://parkmuhyeun.github.io/assets/img/logo.jpg"},"name":"Muhyeun Park"},"headline":"스프링 컨테이너와 스프링 빈","url":"https://parkmuhyeun.github.io/study/spring/2022-02-18-Spring(3)/","dateModified":"2022-02-19T13:55:46+00:00","datePublished":"2022-02-18T00:00:00+00:00","author":{"@type":"Person","name":"Muhyeun Park"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://parkmuhyeun.github.io/study/spring/2022-02-18-Spring(3)/"},"@type":"BlogPosting","description":"Spring Container, Spring Bean","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -120,7 +120,7 @@ Powered by Hydejack v9.1.5 <https://hydejack.com/>
   w._search = {
     DATA_URL: '/assets/sitedata.json?no-cache',
     STORAGE_KEY: 'mini-search/',
-    INDEX_KEY: 'index--2022-02-18T13:48:57+00:00',
+    INDEX_KEY: 'index--2022-02-19T14:02:45+00:00',
   };
   w._clapButton = true;
 }(window);</script>
@@ -396,7 +396,7 @@ html{--accent-color: rgb(79,177,186);--accent-color-faded: rgba(79,177,186,0.5);
 
 <h5 id="1-스프링-컨테이너-생성">1. 스프링 컨테이너 생성</h5>
 
-<p><img src="/assets/img/blog/study/spring/Spring(3)_1.png" alt="img" /></p>
+<p><img src="/assets/img/blog/study/spring/Spring(3)_1.PNG" alt="img" /></p>
 
 <ul>
   <li>new AnnotationConfigApplicationContext(AppConfig.class)</li>
@@ -406,7 +406,7 @@ html{--accent-color: rgb(79,177,186);--accent-color-faded: rgba(79,177,186,0.5);
 
 <h5 id="2-스프링-빈-등록">2. 스프링 빈 등록</h5>
 
-<p><img src="/assets/img/blog/study/spring/Spring(3)_2.png" alt="img" /></p>
+<p><img src="/assets/img/blog/study/spring/Spring(3)_2.PNG" alt="img" /></p>
 
 <ul>
   <li>빈 이름은 메서드 이름을 사용한다.</li>
@@ -421,7 +421,7 @@ html{--accent-color: rgb(79,177,186);--accent-color-faded: rgba(79,177,186,0.5);
 
 <h5 id="3-스프링-빈-의존관계-설정">3. 스프링 빈 의존관계 설정</h5>
 
-<p><img src="/assets/img/blog/study/spring/Spring(3)_3.png" alt="img" /></p>
+<p><img src="/assets/img/blog/study/spring/Spring(3)_3.PNG" alt="img" /></p>
 
 <ul>
   <li>스프링 컨테이너는 설정 정보를 참고해서 의존관계를 주입(DI)한다.</li>
@@ -433,17 +433,17 @@ html{--accent-color: rgb(79,177,186);--accent-color-faded: rgba(79,177,186,0.5);
   <li>
     <p>자바코드, XML, Groovy 등등</p>
 
-    <p><img src="/assets/img/blog/study/spring/Spring(3)_4.png" alt="img" /></p>
+    <p><img src="/assets/img/blog/study/spring/Spring(3)_4.PNG" alt="img" /></p>
   </li>
   <li>
     <p>어떻게 이런 다양한 설정 형식을 지원할까? 그 중심에는 BeanDefinition이라는 추상화가 있다.</p>
 
-    <p><img src="/assets/img/blog/study/spring/Spring(3)_6.png" alt="img" /></p>
+    <p><img src="/assets/img/blog/study/spring/Spring(3)_6.PNG" alt="img" /></p>
   </li>
   <li>
     <p>조금 더 깊이 있게 들어가보자면</p>
 
-    <p><img src="/assets/img/blog/study/spring/Spring(3)_5.png" alt="img" /></p>
+    <p><img src="/assets/img/blog/study/spring/Spring(3)_5.PNG" alt="img" /></p>
   </li>
   <li>AnnotationConfigApplicationContext 는 AnnotatedBeanDefinitionReader 를 사용해서 AppConfig.class 를 읽고 BeanDefinition 을 생성한다.</li>
   <li>GenericXmlApplicationContext 는 XmlBeanDefinitionReader 를 사용해서 appConfig.xml 설정정보를 읽고 BeanDefinition 을 생성한다.</li>

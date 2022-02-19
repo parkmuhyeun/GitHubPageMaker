@@ -6,8 +6,8 @@
 </description>
     <link>https://parkmuhyeun.github.io/</link>
     <atom:link href="https://parkmuhyeun.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 18 Feb 2022 13:48:57 +0000</pubDate>
-    <lastBuildDate>Fri, 18 Feb 2022 13:48:57 +0000</lastBuildDate>
+    <pubDate>Sat, 19 Feb 2022 14:02:45 +0000</pubDate>
+    <lastBuildDate>Sat, 19 Feb 2022 14:02:45 +0000</lastBuildDate>
     <generator>Jekyll v4.2.1</generator>
     
       <item>
@@ -80,7 +80,7 @@
 
 &lt;h5 id=&quot;1-스프링-컨테이너-생성&quot;&gt;1. 스프링 컨테이너 생성&lt;/h5&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets/img/blog/study/spring/Spring(3)_1.png&quot; alt=&quot;img&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/img/blog/study/spring/Spring(3)_1.PNG&quot; alt=&quot;img&quot; /&gt;&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;new AnnotationConfigApplicationContext(AppConfig.class)&lt;/li&gt;
@@ -90,7 +90,7 @@
 
 &lt;h5 id=&quot;2-스프링-빈-등록&quot;&gt;2. 스프링 빈 등록&lt;/h5&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets/img/blog/study/spring/Spring(3)_2.png&quot; alt=&quot;img&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/img/blog/study/spring/Spring(3)_2.PNG&quot; alt=&quot;img&quot; /&gt;&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;빈 이름은 메서드 이름을 사용한다.&lt;/li&gt;
@@ -105,7 +105,7 @@
 
 &lt;h5 id=&quot;3-스프링-빈-의존관계-설정&quot;&gt;3. 스프링 빈 의존관계 설정&lt;/h5&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets/img/blog/study/spring/Spring(3)_3.png&quot; alt=&quot;img&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/img/blog/study/spring/Spring(3)_3.PNG&quot; alt=&quot;img&quot; /&gt;&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;스프링 컨테이너는 설정 정보를 참고해서 의존관계를 주입(DI)한다.&lt;/li&gt;
@@ -117,17 +117,17 @@
   &lt;li&gt;
     &lt;p&gt;자바코드, XML, Groovy 등등&lt;/p&gt;
 
-    &lt;p&gt;&lt;img src=&quot;/assets/img/blog/study/spring/Spring(3)_4.png&quot; alt=&quot;img&quot; /&gt;&lt;/p&gt;
+    &lt;p&gt;&lt;img src=&quot;/assets/img/blog/study/spring/Spring(3)_4.PNG&quot; alt=&quot;img&quot; /&gt;&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
     &lt;p&gt;어떻게 이런 다양한 설정 형식을 지원할까? 그 중심에는 BeanDefinition이라는 추상화가 있다.&lt;/p&gt;
 
-    &lt;p&gt;&lt;img src=&quot;/assets/img/blog/study/spring/Spring(3)_6.png&quot; alt=&quot;img&quot; /&gt;&lt;/p&gt;
+    &lt;p&gt;&lt;img src=&quot;/assets/img/blog/study/spring/Spring(3)_6.PNG&quot; alt=&quot;img&quot; /&gt;&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
     &lt;p&gt;조금 더 깊이 있게 들어가보자면&lt;/p&gt;
 
-    &lt;p&gt;&lt;img src=&quot;/assets/img/blog/study/spring/Spring(3)_5.png&quot; alt=&quot;img&quot; /&gt;&lt;/p&gt;
+    &lt;p&gt;&lt;img src=&quot;/assets/img/blog/study/spring/Spring(3)_5.PNG&quot; alt=&quot;img&quot; /&gt;&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;AnnotationConfigApplicationContext 는 AnnotatedBeanDefinitionReader 를 사용해서 AppConfig.class 를 읽고 BeanDefinition 을 생성한다.&lt;/li&gt;
   &lt;li&gt;GenericXmlApplicationContext 는 XmlBeanDefinitionReader 를 사용해서 appConfig.xml 설정정보를 읽고 BeanDefinition 을 생성한다.&lt;/li&gt;
