@@ -6,9 +6,175 @@
 </description>
     <link>https://parkmuhyeun.github.io/</link>
     <atom:link href="https://parkmuhyeun.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 11 Mar 2022 16:22:19 +0000</pubDate>
-    <lastBuildDate>Fri, 11 Mar 2022 16:22:19 +0000</lastBuildDate>
+    <pubDate>Sun, 27 Mar 2022 15:06:15 +0000</pubDate>
+    <lastBuildDate>Sun, 27 Mar 2022 15:06:15 +0000</lastBuildDate>
     <generator>Jekyll v4.2.1</generator>
+    
+      <item>
+        <title>Internet Network</title>
+        <description>&lt;h2 id=&quot;인터넷에서-컴퓨터-둘은-어떻게-통신할까&quot;&gt;인터넷에서 컴퓨터 둘은 어떻게 통신할까?&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets//img/blog/study/http-web/IN_1.PNG&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;ip-주소-부여&quot;&gt;IP 주소 부여&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets//img/blog/study/http-web/IN_2.PNG&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;ip&quot;&gt;IP&lt;/h3&gt;
+&lt;p&gt;인터넷 프로토콜 역활&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;지정한 IP 주소에 데이터 전달&lt;/li&gt;
+  &lt;li&gt;패킷(Packet)이라는 통신 단위로 데이터 전달&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;ip-패킷-정보&quot;&gt;IP 패킷 정보&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets//img/blog/study/http-web/IN_3.PNG&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;클라이언트-패킷-전달&quot;&gt;클라이언트 패킷 전달&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets//img/blog/study/http-web/IN_4.PNG&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;서버-패킷-전달&quot;&gt;서버 패킷 전달&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets//img/blog/study/http-web/IN_5.PNG&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;ip-프로토콜의-한계&quot;&gt;IP 프로토콜의 한계&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;비연결성
+    &lt;ul&gt;
+      &lt;li&gt;패킷을 받을 대상이 없거나 서비스 불능 상태여도 패킷 전송&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;비신뢰성
+    &lt;ul&gt;
+      &lt;li&gt;중간에 패킷이 사라지면?&lt;/li&gt;
+      &lt;li&gt;패킷이 순서대로 안오면?&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;프로그램 구분
+    &lt;ul&gt;
+      &lt;li&gt;같은 IP를 사용하는 서버에서 통신하는 애플리케이션이 둘 이상이면?&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;tcp-udp&quot;&gt;TCP, UDP&lt;/h2&gt;
+
+&lt;h3 id=&quot;인터넷-프로토콜-스택의-4계층&quot;&gt;인터넷 프로토콜 스택의 4계층&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets//img/blog/study/http-web/IN_6.PNG&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;프로토콜-계층&quot;&gt;프로토콜 계층&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets//img/blog/study/http-web/IN_7.PNG&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;tcpip-패킷-정보&quot;&gt;TCP/IP 패킷 정보&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets//img/blog/study/http-web/IN_8.PNG&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;tcp-특징&quot;&gt;TCP 특징&lt;/h3&gt;
+&lt;p&gt;전송 제어 프로토콜(Transmission Control Protocol)&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;연결지향 - TCP 3 way handshake (가상 연결)&lt;/li&gt;
+  &lt;li&gt;데이터 전달 보증&lt;/li&gt;
+  &lt;li&gt;순서 보증&lt;/li&gt;
+  &lt;li&gt;신뢰할 수 있는 프로토콜&lt;/li&gt;
+  &lt;li&gt;현재는 대부분 TCP 사용&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;tcp-3-way-handshake&quot;&gt;TCP 3 way handshake&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets//img/blog/study/http-web/IN_9.PNG&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;SYN: 접속 요청&lt;/li&gt;
+  &lt;li&gt;ACK: 요청 수락&lt;/li&gt;
+  &lt;li&gt;3.ACK와 함께 데이터 전송 가능&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;udp-특징&quot;&gt;UDP 특징&lt;/h3&gt;
+&lt;p&gt;사용자 데이터그램 프로토콜(User Datagram Protocol)&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;연결지향 X&lt;/li&gt;
+  &lt;li&gt;데이터 전달 보증 X&lt;/li&gt;
+  &lt;li&gt;순서 보장 X&lt;/li&gt;
+  &lt;li&gt;데이터 전달 및 순서가 보장되지 않지만, 단순하고 빠름&lt;/li&gt;
+  &lt;li&gt;정리
+    &lt;ul&gt;
+      &lt;li&gt;IP와 거의 같지만 PORT + 체크섬 정도만 추가&lt;/li&gt;
+      &lt;li&gt;애플리케이션에 추가 작업 필요&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;port&quot;&gt;PORT&lt;/h2&gt;
+&lt;p&gt;같은 IP 내에서 프로세스 구분&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets//img/blog/study/http-web/IN_10.PNG&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;0 ~ 65535 할당 가능&lt;/li&gt;
+  &lt;li&gt;0 ~ 1023 : 잘 알려진 포트, 사용하지 않는 것이 좋음
+    &lt;ul&gt;
+      &lt;li&gt;FTP - 20, 21&lt;/li&gt;
+      &lt;li&gt;TELNET - 23&lt;/li&gt;
+      &lt;li&gt;HTTP - 80&lt;/li&gt;
+      &lt;li&gt;HTTPS - 443&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;dns&quot;&gt;DNS&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;IP는 기억하기 어렵다.
+    &lt;ul&gt;
+      &lt;li&gt;ex) IP: 200.200.200.2&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;IP는 변경될 수 있다.
+    &lt;ul&gt;
+      &lt;li&gt;과거 IP: 200.200.200.2 -&amp;gt; 신규 IP: 200.200.200.3&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;dns-1&quot;&gt;DNS&lt;/h3&gt;
+&lt;p&gt;도메인 네임 시스템(Domain Name System)&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;도메인 명을 IP 주소로 변환&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets//img/blog/study/http-web/IN_11.PNG&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;참고:
+&lt;a href=&quot;https://www.inflearn.com/course/http-%EC%9B%B9-%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC#&quot;&gt;Http Web&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;*틀린 부분이 있으면 언제든지 말씀해 주시면 공부해서 수정하겠습니다.&lt;/p&gt;
+</description>
+        <pubDate>Sun, 27 Mar 2022 00:00:00 +0000</pubDate>
+        <link>https://parkmuhyeun.github.io/study/http%20web/2022-03-27-Internet-Network/</link>
+        <guid isPermaLink="true">https://parkmuhyeun.github.io/study/http%20web/2022-03-27-Internet-Network/</guid>
+        
+        <category>http</category>
+        
+        <category>IP</category>
+        
+        <category>TCP</category>
+        
+        <category>UDP</category>
+        
+        <category>PORT</category>
+        
+        <category>DNS</category>
+        
+        
+        <category>study</category>
+        
+        <category>http web</category>
+        
+      </item>
     
       <item>
         <title>빈 생명주기 콜백</title>
