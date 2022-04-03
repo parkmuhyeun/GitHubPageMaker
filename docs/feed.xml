@@ -6,9 +6,210 @@
 </description>
     <link>https://parkmuhyeun.github.io/</link>
     <atom:link href="https://parkmuhyeun.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 27 Mar 2022 15:06:15 +0000</pubDate>
-    <lastBuildDate>Sun, 27 Mar 2022 15:06:15 +0000</lastBuildDate>
+    <pubDate>Sun, 03 Apr 2022 14:49:07 +0000</pubDate>
+    <lastBuildDate>Sun, 03 Apr 2022 14:49:07 +0000</lastBuildDate>
     <generator>Jekyll v4.2.1</generator>
+    
+      <item>
+        <title>Uri-Webbrowser</title>
+        <description>&lt;h2 id=&quot;uri-uniform-resource-identifier&quot;&gt;URI (Uniform Resource Identifier)&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets//img/blog/study/http-web/uw_1.PNG&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;URI는 로케이터(locator), 이름(name) 또는 둘다 추가로 분류될 수 있다.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;URL(Resource Locator)
+    &lt;ul&gt;
+      &lt;li&gt;ex) foo://example.com:8042/over/there?name=ferrent#nose&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;URN(Resource Name)
+    &lt;ul&gt;
+      &lt;li&gt;ex) urn:example:animal:ferret:nose&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;uri&quot;&gt;URI&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;b&gt;U&lt;/b&gt;niform: 리소스 식별하는 통일된 방식&lt;/li&gt;
+  &lt;li&gt;&lt;b&gt;R&lt;/b&gt;esourec: 자원, URI로 식별할 수 있는 모든 것(제한 없음)&lt;/li&gt;
+  &lt;li&gt;&lt;b&gt;I&lt;/b&gt;dentifier: 다른 항목과 구분하는데 필요한 정보&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;url-urn&quot;&gt;URL, URN&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;URL - Locator: 리소스가 있는 위치를 지정&lt;/li&gt;
+  &lt;li&gt;URN - Name: 리소스에 이름을 부여&lt;/li&gt;
+  &lt;li&gt;위치는 변할 수 있지만, 이름은 변하지 않는다.&lt;/li&gt;
+  &lt;li&gt;URN 이름만으로 실제 리소스를 찾을 수 있는 방법이 보편화 되지 않음&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;url&quot;&gt;URL&lt;/h2&gt;
+&lt;p&gt;전체 문법&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;scheme://[userinfo@]host[:port][/path][?query][#fragment]
+    &lt;ul&gt;
+      &lt;li&gt;[ ]는 option&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;https://www.google.com:443/search?q=hello&amp;amp;hl-ko
+    &lt;ul&gt;
+      &lt;li&gt;프로토콜(https)&lt;/li&gt;
+      &lt;li&gt;호스트명(www.google.com)&lt;/li&gt;
+      &lt;li&gt;포트 번호(443)&lt;/li&gt;
+      &lt;li&gt;패스(/search)&lt;/li&gt;
+      &lt;li&gt;쿼리 파라미터(q=hello&amp;amp;hl=ko)&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;scheme&quot;&gt;scheme&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;b&gt;scheme:&lt;/b&gt;//[userinfo@]host[:port][/path][?query][#fragment]&lt;/li&gt;
+  &lt;li&gt;&lt;b&gt;https:&lt;/b&gt;//www.google.com:443/search?q=hello&amp;amp;hl-ko
+    &lt;ul&gt;
+      &lt;li&gt;주로 프로토콜 사용&lt;/li&gt;
+      &lt;li&gt;프로토콜: 어떤 방식으로 자원에 접근할 것인가 하는 약속 규칙
+        &lt;ul&gt;
+          &lt;li&gt;예) http, https, ftp 등등&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;http는 80 포트, https는 443 포트를 주로 사용, 포트는 생략 가능&lt;/li&gt;
+      &lt;li&gt;https는 http에 보안 추가 (HTTP Secure)&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;userinfo&quot;&gt;userinfo&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;scheme://&lt;b&gt;[userinfo@]&lt;/b&gt;host[:port][/path][?query][#fragment]&lt;/li&gt;
+  &lt;li&gt;https://www.google.com:443/search?q=hello&amp;amp;hl-ko
+    &lt;ul&gt;
+      &lt;li&gt;URL에 사용자정보를 포함해서 인증&lt;/li&gt;
+      &lt;li&gt;거의 사용하지 않음&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;host&quot;&gt;host&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;scheme://[userinfo@]&lt;b&gt;host&lt;/b&gt;[:port][/path][?query][#fragment]&lt;/li&gt;
+  &lt;li&gt;https://&lt;b&gt;www.google.com&lt;/b&gt;:443/search?q=hello&amp;amp;hl-ko
+    &lt;ul&gt;
+      &lt;li&gt;호스트명&lt;/li&gt;
+      &lt;li&gt;도메인명 또는 IP 주소를 직접 사용가능&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;port&quot;&gt;port&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;scheme://[userinfo@]host&lt;b&gt;[:port]&lt;/b&gt;[/path][?query][#fragment]&lt;/li&gt;
+  &lt;li&gt;https://www.google.com:&lt;b&gt;443&lt;/b&gt;/search?q=hello&amp;amp;hl-ko
+    &lt;ul&gt;
+      &lt;li&gt;접속 포트&lt;/li&gt;
+      &lt;li&gt;일반적으로 생략, 생략시 http는 80, https는 443&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;path&quot;&gt;path&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;scheme://[userinfo@]host[:port]&lt;b&gt;[/path]&lt;/b&gt;[?query][#fragment]&lt;/li&gt;
+  &lt;li&gt;https://www.google.com:443&lt;b&gt;/search&lt;/b&gt;?q=hello&amp;amp;hl-ko
+    &lt;ul&gt;
+      &lt;li&gt;리소스 경로(path), 계층적 구조&lt;/li&gt;
+      &lt;li&gt;ex) /user, /user/20&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;query&quot;&gt;query&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;scheme://[userinfo@]host[:port][/path]&lt;b&gt;[?query]&lt;/b&gt;[#fragment]&lt;/li&gt;
+  &lt;li&gt;https://www.google.com:443/search&lt;b&gt;?q=hello&amp;amp;hl-ko&lt;/b&gt;
+    &lt;ul&gt;
+      &lt;li&gt;key=value 형태&lt;/li&gt;
+      &lt;li&gt;?로 시작, &amp;amp;로 추가 가능 =&amp;gt; ?keyA=value&amp;amp;keyB=valueB&lt;/li&gt;
+      &lt;li&gt;query parameter, query string 등으로 불림, 웹서버에 제공하는 파라미터, 문자 형태&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;fragment&quot;&gt;fragment&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;scheme://[userinfo@]host[:port][/path][?query]&lt;b&gt;[#fragment]&lt;/b&gt;&lt;/li&gt;
+  &lt;li&gt;https://docs.spring.io/spring-boot/docs/current/reference/html/gettingstarted.html&lt;b&gt;#getting-started-introducing-spring-boot&lt;/b&gt;
+    &lt;ul&gt;
+      &lt;li&gt;fragment&lt;/li&gt;
+      &lt;li&gt;html 내부 북마크 등에 사용&lt;/li&gt;
+      &lt;li&gt;서버에 전송하는 정보 아님&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;웹-브라우저-요청-흐름&quot;&gt;웹 브라우저 요청 흐름&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets//img/blog/study/http-web/uw_2.PNG&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;HTTP 요청 메시지
+
+GET/search?q=hello&amp;amp;hl=ko HTTP/1.1
+HOST: www.google.com
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;*DNS가 뭔지 모르겠으면 &lt;a href=&quot;http://127.0.0.1:4000/study/http%20web/2022-03-27-Internet-Network/#dns&quot;&gt;이전글&lt;/a&gt;을 참고&lt;/p&gt;
+
+&lt;h3 id=&quot;패킷-생성&quot;&gt;패킷 생성&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets//img/blog/study/http-web/uw_4.PNG&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;요청-응답-과정&quot;&gt;요청, 응답 과정&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets//img/blog/study/http-web/uw_3.PNG&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets//img/blog/study/http-web/uw_5.PNG&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;HTTP 응답 메시지
+
+HTTP/1.1 200 OK
+Content-Type: text/html;charset=UTF-8
+Content-Length: 3423
+&amp;lt;html&amp;gt;
+ &amp;lt;body&amp;gt;...&amp;lt;/body&amp;gt;
+&amp;lt;/html&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;&lt;img src=&quot;/assets//img/blog/study/http-web/uw_6.PNG&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;결과&quot;&gt;결과&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets//img/blog/study/http-web/uw_7.PNG&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;참고:
+&lt;a href=&quot;https://www.inflearn.com/course/http-%EC%9B%B9-%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC#&quot;&gt;Http Web&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;*틀린 부분이 있으면 언제든지 말씀해 주시면 공부해서 수정하겠습니다.&lt;/p&gt;
+</description>
+        <pubDate>Sun, 03 Apr 2022 00:00:00 +0000</pubDate>
+        <link>https://parkmuhyeun.github.io/study/http%20web/2022-04-03-Uri-Webbrowser/</link>
+        <guid isPermaLink="true">https://parkmuhyeun.github.io/study/http%20web/2022-04-03-Uri-Webbrowser/</guid>
+        
+        <category>URI</category>
+        
+        <category>URL</category>
+        
+        <category>URN</category>
+        
+        
+        <category>study</category>
+        
+        <category>http web</category>
+        
+      </item>
     
       <item>
         <title>Internet Network</title>
