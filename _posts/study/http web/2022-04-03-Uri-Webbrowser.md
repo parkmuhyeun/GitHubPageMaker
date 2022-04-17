@@ -105,7 +105,7 @@ HOST: www.google.com
 
 *DNS가 뭔지 모르겠으면 [이전글]을 참고
 
-[이전글]:http://127.0.0.1:4000/study/http%20web/2022-03-27-Internet-Network/#dns
+[이전글]:https://parkmuhyeun.github.io/study/http%20web/2022-03-27-Internet-Network/#dns
 
 ### 패킷 생성
 
