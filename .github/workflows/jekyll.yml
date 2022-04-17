@@ -10,6 +10,8 @@ jobs:
     steps:
       - name: 🛎 Check out master
         uses: actions/checkout@master
+      - name: work around permission issue
+        run: git config --global --add safe.directory /github/workspace
       - name: 🧪 Build and deploy
         uses: victoriadrake/jekyll-cd@master
 #         env:
