@@ -10,7 +10,6 @@ jobs:
     steps:
       - name: 🛎 Check out
         uses: actions/checkout@v3.0.1
-      - name: work around permission issue
       # Use GitHub Actions' cache to shorten build times and decrease load on servers
       - name: Cache
         uses: actions/cache@v2
