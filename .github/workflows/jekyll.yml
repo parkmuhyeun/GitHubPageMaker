@@ -23,5 +23,5 @@ jobs:
         with:
           provider: 'github'
           token: ${{ secrets.JEKYLL_PAT }} # It's your Personal Access Token(PAT)
-          repository: 'parkmuhyeun.github.io'             # Default is current repository
+          repository: 'parkmuhyeun/parkmuhyeun.github.io'             # Default is current repository
           branch: 'master'         # Default is gh-pages for github provider
