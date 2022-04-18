@@ -22,12 +22,13 @@ jobs:
         uses: helaili/jekyll-action@2.3.1
         with:
           token: ${{ secrets.JEKYLL_PAT }}
+          jekyll_src: 'docs'
       - name: Pushes to another repository
         uses: cpina/github-action-push-to-another-repository@main
         env:
           API_TOKEN_GITHUB: ${{ secrets.JEKYLL_PAT }}
         with:
-          source-directory: 'site'
+          source-directory: 'docs'
           destination-github-username: 'parkmuhyeun'
           destination-repository-name: 'parkmuhyeun.github.io'
           user-email: pjhg410@gmail.com
