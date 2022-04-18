@@ -18,18 +18,10 @@ jobs:
           key: ${{ runner.os }}-gems-${{ hashFiles('**/Gemfile') }}
           restore-keys: |
             ${{ runner.os }}-gems-
-      - name: Jekyll Actions
-        uses: helaili/jekyll-action@2.3.1
+      - name: build and deploy
+        uses: jeffreytse/jekyll-deploy-action@v0.3.1
         with:
-          token: ${{ secrets.JEKYLL_PAT }}
-          jekyll_src: 'docs'
-      - name: Pushes to another repository
-        uses: cpina/github-action-push-to-another-repository@main
-        env:
-          API_TOKEN_GITHUB: ${{ secrets.JEKYLL_PAT }}
-        with:
-          source-directory: 'docs'
-          destination-github-username: 'parkmuhyeun'
-          destination-repository-name: 'parkmuhyeun.github.io'
-          user-email: pjhg410@gmail.com
-          target-branch: master
+          provider: 'github'
+          token: ${{ secrets.JEKYLL_PAT }} # It's your Personal Access Token(PAT)
+          repository: 'parkmuhyeun.github.io'             # Default is current repository
+          branch: 'master'         # Default is gh-pages for github provider
