@@ -30,6 +30,11 @@ gem "kramdown-math-katex"
 # A JavaScript runtime for ruby that helps with running the katex gem above.
 gem "duktape"
 
+source 'https://rubygems.org'
+
+gem 'jekyll', '~> 3.8.5'
+gem 'coderay', '~> 1.1.0'
+
 group :jekyll_plugins do
   # gem "jekyll-default-layout"
   gem "jekyll-feed"
@@ -38,8 +43,9 @@ group :jekyll_plugins do
   # gem "jekyll-readme-index"
   # gem "jekyll-redirect-from"
   gem "jekyll-relative-links"
-  gem "jekyll-seo-tag"
+  # gem "jekyll-seo-tag"
   gem "jekyll-sitemap"
+  gem 'jekyll-asciidoc', '~> 2.1.1'
   # gem "jekyll-titles-from-headings"
   # gem "jekyll-include-cache"
 

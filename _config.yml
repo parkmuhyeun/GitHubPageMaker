@@ -221,6 +221,14 @@ kramdown:
   math_engine_opts:    {}
   footnote_backlink:   '&#x21a9;&#xfe0e;'
 
+asciidoc: {}
+asciidoctor:
+  base_dir: :docdir
+  safe: unsafe
+  attributes:
+    - idseparator=_
+    - source-highlighter=coderay
+    - icons=font
 
 # 3rd Party Integrations
 # ----------------------------------------------------------------------------------------
