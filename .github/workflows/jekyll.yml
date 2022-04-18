@@ -11,7 +11,10 @@ jobs:
       - name: 🛎 Check out
         uses: actions/checkout@v3.0.1
       - name: work around permission issue
-        run: git config --global --add safe.directory '*'
+        run: |
+          git config --global --add safe.directory ${{ github.workspace }}
+          git config --global --add safe.directory /github/workspace
+          git config --global --add safe.directory /home
       - name: 🧪 Build and deploy
         uses: victoriadrake/jekyll-cd@master
 #         env:
