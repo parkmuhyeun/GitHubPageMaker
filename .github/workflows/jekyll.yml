@@ -11,10 +11,6 @@ jobs:
       - name: 🛎 Check out
         uses: actions/checkout@v3.0.1
       - name: work around permission issue
-        run: |
-          git config --global --add safe.directory ${{ github.workspace }}
-          git config --global --add safe.directory /github/workspace
-          git config --global --add safe.directory /home
       # Use GitHub Actions' cache to shorten build times and decrease load on servers
       - name: Cache
         uses: actions/cache@v2
@@ -27,7 +23,6 @@ jobs:
         uses: helaili/jekyll-action@2.3.1
         with:
           token: ${{ secrets.JEKYLL_PAT }}
-          jekyll_src: 'site'
       - name: Pushes to another repository
         uses: cpina/github-action-push-to-another-repository@main
         env:
