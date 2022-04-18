@@ -11,7 +11,7 @@ jobs:
       - name: 🛎 Check out master
         uses: actions/checkout@master
       - name: work around permission issue
-        run: git config --global --add safe.directory "$GITHUB_WORKSPACE"
+        run: git config --global --add safe.directory '*'
       - name: 🧪 Build and deploy
         uses: victoriadrake/jekyll-cd@master
 #         env:
