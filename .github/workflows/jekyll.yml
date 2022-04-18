@@ -17,11 +17,6 @@ jobs:
           git config --global --add safe.directory /home
       - name: 🧪 Build and deploy
         uses: victoriadrake/jekyll-cd@master
-#         env:
-#           PAGES_BRANCH: master
-#           BUILD_DIR: .
-#           TOKEN: ${{ secrets.JEKYLL_PAT }}
-#           REPOSITORY: parkmuhyeun/parkmuhyeun.github.io
       - name: Pushes to another repository
         uses: cpina/github-action-push-to-another-repository@main
         env:
