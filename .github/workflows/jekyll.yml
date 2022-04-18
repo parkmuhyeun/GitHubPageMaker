@@ -8,8 +8,8 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: 🛎 Check out master
-        uses: actions/checkout@master
+      - name: 🛎 Check out
+        uses: actions/checkout@v3.0.1
       - name: work around permission issue
         run: git config --global --add safe.directory '*'
       - name: 🧪 Build and deploy
