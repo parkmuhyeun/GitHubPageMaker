@@ -5,7 +5,7 @@ subtitle: 부제목 예시
 tags: URI URL URN
 description: >
   URI와 웹 브라우저 요청 흐름
-sitemap: false
+sitemap: true
 hide_last_modified: true
 categories:
   - study

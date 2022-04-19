@@ -5,7 +5,7 @@ subtitle: 부제목 예시
 tags: http IP TCP UDP PORT DNS
 description: >
   인터넷 네트워크
-sitemap: false
+sitemap: true
 hide_last_modified: true
 categories:
   - study

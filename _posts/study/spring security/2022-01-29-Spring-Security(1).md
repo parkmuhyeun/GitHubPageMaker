@@ -5,7 +5,7 @@ subtitle: 부제목 예시
 tags: 
 description: >
   Spring Security 이해
-sitemap: false
+sitemap: true
 hide_last_modified: true
 categories:
   - study
