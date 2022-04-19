@@ -1,40 +1,34 @@
-name: Jekyll build & deploy
+name: Build and Deploy
 
-on: push
+on:
+  push:
+    branches:
+      - master  # Here source code branch is `master`, it could be other branch
 
 jobs:
   build_and_deploy:
-
     runs-on: ubuntu-latest
-
     steps:
-      - name: 🛎 Check out
-        uses: actions/checkout@v3.0.1
-      - name: work around permission issue
-        run: |
-          git config --global --add safe.directory ${{ github.workspace }}
-          git config --global --add safe.directory /github/workspace
-          git config --global --add safe.directory /home
-      # Use GitHub Actions' cache to shorten build times and decrease load on servers
-      - name: Cache
-        uses: actions/cache@v2
+      - uses: actions/checkout@v2
+
+      # Use GitHub Actions' cache to cache dependencies on servers
+      - uses: actions/cache@v2
         with:
           path: vendor/bundle
-          key: ${{ runner.os }}-gems-${{ hashFiles('**/Gemfile') }}
+          key: ${{ runner.os }}-gems-${{ hashFiles('**/Gemfile.lock') }}
           restore-keys: |
             ${{ runner.os }}-gems-
-      - name: Jekyll Actions
-        uses: helaili/jekyll-action@2.3.1
+      # Use GitHub Deploy Action to build and deploy to Github
+      - uses: jeffreytse/jekyll-deploy-action@v0.3.1
         with:
-          token: ${{ secrets.JEKYLL_PAT }}
-          jekyll_src: 'site'
-      - name: Pushes to another repository
-        uses: cpina/github-action-push-to-another-repository@main
-        env:
-          API_TOKEN_GITHUB: ${{ secrets.JEKYLL_PAT }}
-        with:
-          source-directory: 'site'
-          destination-github-username: 'parkmuhyeun'
-          destination-repository-name: 'parkmuhyeun.github.io'
-          user-email: pjhg410@gmail.com
-          target-branch: master
+          provider: 'github'
+          token: ${{ secrets.JEKYLL_PAT }} # It's your Personal Access Token(PAT)
+          repository: 'parkmuhyeun/parkmuhyeun.github.io'             # Default is current repository
+          branch: 'master'         # Default is gh-pages for github provider
+          jekyll_src: './'           # Default is root directory
+          jekyll_cfg: '_config.yml'  # Default is _config.yml
+          jekyll_baseurl: ''         # Default is according to _config.yml
+          bundler_ver: '>=0'         # Default is latest bundler version
+          cname: ''                  # Default is to not use a cname
+          actor: ''                  # Default is the GITHUB_ACTOR
+          pre_build_commands: ''     # Installing additional dependencies (Arch Linux)
