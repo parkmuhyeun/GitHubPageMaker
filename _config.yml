@@ -64,6 +64,10 @@ menu:
     submenu:
       - title:       Http Web
         url:         /http-web/
+    submenu:
+      - title:       JPA
+        url:         /jpa/
+        
   - title:             Etc
     url:               /etc/
   # - title:            Subcat
