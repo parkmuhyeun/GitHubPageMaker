@@ -71,7 +71,7 @@ menu:
   - title:             Etc
     url:               /etc/
     submenu:
-      - title:       Data Structure & Algorithm
+      - title:       Data Structure, Algorithm
         url:         /data-structure-algorithm/
   # - title:            Subcat
   #   url:              /subcat/

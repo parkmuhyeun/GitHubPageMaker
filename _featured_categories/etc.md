@@ -20,6 +20,6 @@ description: >
 sitemap: true
 ---
 
-* [Data-Structure&Algorithm]{:.heading.flip-title}
+* [Data-Structure, Algorithm]{:.heading.flip-title}
 
-[Data-Structure&Algorithm]: /data-structure-algorithm/
+[Data-Structure, Algorithm]: /data-structure-algorithm/

@@ -9,7 +9,7 @@ sitemap: true
 hide_last_modified: true
 categories:
   - etc
-  - data structure&algorithm
+  - data structure, algorithm
 ---
 
 ## 동적배열(Dynamic Array)
