@@ -73,6 +73,9 @@ menu:
     submenu:
       - title:       Data Structure, Algorithm
         url:         /data-structure-algorithm/
+    submenu:
+      - title:       Java
+        url:         /java/
   # - title:            Subcat
   #   url:              /subcat/
   #   submenu:
