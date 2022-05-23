@@ -2,7 +2,7 @@
 layout: post
 title: 객체지향 프로그래밍 vs 절차지향 프로그래밍
 subtitle: 부제목 예시
-tags: procedure-oriented-programming object-oriented programming
+tags: procedure-oriented-programming object-oriented-programming
 description: >
   객체지향과 절차지향 프로그래밍의 차이
 sitemap: true
