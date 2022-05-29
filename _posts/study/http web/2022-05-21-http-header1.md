@@ -12,7 +12,7 @@ categories:
   - http web
 ---
 
->HTTP header에 대한 매우 상세한 내용으로 이번글 HTTP Header-1과 다음 글 HTTP Header-2로 나뉘어져 있습니다. 충분한 시간이 있을 때 읽기를 권장합니다.
+>HTTP header에 대한 매우 상세한 내용으로 이번글 HTTP Header-1과 [다음 글 HTTP Header-2]로 나뉘어져 있습니다. 이번 글은 HTTP 일반 헤더에 관한 글입니다.
 
 ## HTTP 헤더
 - header-field = field-name: field-value
@@ -303,7 +303,10 @@ Secure, HttpOnly, SameSite
 
 ---
 
-글이 길어지는 관계로 여기서 끊고 다음글 HTTP Header-2에 캐시와 조건부 요청에 관하여 이어서 작성하겠습니다.
+글이 길어지는 관계로 여기서 끊고 [다음 글 HTTP Header-2]에 캐시와 조건부 요청에 관하여 이어서 작성하겠습니다.
+
+
+[다음 글 HTTP Header-2]: https://parkmuhyeun.github.io/study/http%20web/2022-05-29-http-header2/
 
 ---
 
