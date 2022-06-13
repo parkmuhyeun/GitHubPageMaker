@@ -76,6 +76,9 @@ menu:
     submenu:
       - title:       Java
         url:         /java/
+    submenu:
+      - title:       Seminar
+        url:         /seminar
   # - title:            Subcat
   #   url:              /subcat/
   #   submenu:
