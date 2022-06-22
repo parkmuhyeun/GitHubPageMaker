@@ -79,6 +79,9 @@ menu:
     submenu:
       - title:       Seminar
         url:         /seminar
+    submenu:
+      - title:       Database
+        url:         /database
   # - title:            Subcat
   #   url:              /subcat/
   #   submenu:
