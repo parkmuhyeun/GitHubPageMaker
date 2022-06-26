@@ -67,6 +67,9 @@ menu:
     submenu:
       - title:       JPA
         url:         /jpa/
+    submenu:
+      - title:       IT Infra
+        url:         /it-infra/
         
   - title:             Etc
     url:               /etc/

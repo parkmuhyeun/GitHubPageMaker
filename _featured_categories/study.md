@@ -26,8 +26,10 @@ sitemap: true
 * [Spring-Security]{:.heading.flip-title}
 * [Http-Web]{:.heading.flip-title}
 * [JPA]{:.heading.flip-title}
+* [IT-Infra]{:.heading.flip-title}
 
 [Spring]: /spring/
 [Spring-Security]: /spring-security/
 [Http-Web]: /http-web/
 [JPA]: /jpa/
+[IT-Infra]: /it-infra/
