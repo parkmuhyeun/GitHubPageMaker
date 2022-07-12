@@ -85,6 +85,9 @@ menu:
     submenu:
       - title:       Database
         url:         /database
+    submenu:
+      - title:       Operating System
+        url:         /operating-system/
   # - title:            Subcat
   #   url:              /subcat/
   #   submenu:
