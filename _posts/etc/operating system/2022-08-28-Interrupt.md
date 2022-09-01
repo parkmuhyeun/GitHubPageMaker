@@ -52,6 +52,11 @@ MCU 자체가 하드웨어적으로 그 변화를 체크하여 변화 시에만 
 7. 인터럽트 작업이 끝나면 원래 하던 프로그램 상태 로드 (⑦, ⑧)
 9. 다시 주 프로그램 실행(원래 하던 곳 이어서 진행) (⑨)
 
+
+> 4번 과정을 추가적으로 설명하자면 인터럽트 벡터는 인터럽트가 발생했을 때, 그 인터럽트를 처리할 수 있는 서비스 루틴(ISR)들의 주소를 가지고 있는 공간이다.
+
+> 운영체제는 각종 인터럽트별로 인터럽트 발생 시 처리해야할 내용이 이미 프로그램되어 있으며 이를 인터럽트 서비스 루틴 또는 인터럽트 핸들러이다.
+
 ---
 참고:
 - [https://m.blog.naver.com/PostView.nhn?blogId=scw0531&logNo=220650635893&proxyReferer=https:%2F%2Fwww.google.com%2F](https://m.blog.naver.com/PostView.nhn?blogId=scw0531&logNo=220650635893&proxyReferer=https:%2F%2Fwww.google.com%2F)
