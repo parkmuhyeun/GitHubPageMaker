@@ -30,12 +30,12 @@ Hash는 내부적으로 배열을 사용하여 저장하는 Key와 Value로 이�
 ### 1. Open Addressing
 
 해시 충돌이 발생하면 다른 해시 버킷에 해당 자료를 삽입하는 방식이다. 공개 주소 방식이라고도 불리는 이 알고리즘은 충돌이 발생하면 데이터를 저장할 장소를 찾는다. 최악의 경우 비어있는 버킷을 찾지 못하고 탐색을 시작한 위치까지 되돌아 올 수 있다. 이 과정에서도 여러 방법들이 있다.
-- Linear Probing: 순차적으로 탐색하여 비어있는 버킷을 찾을 때까지 진행
+- Linear probing: 순차적으로 탐색하여 비어있는 버킷을 찾을 때까지 진행
 - Quadratic probing: 2차 함수를 이용해 탐색할 위치를 찾는다.
 - Double hasing probing: 첫번째 해시 함수에서 충돌이 발생하면 2차 해시 함수를 이용해 새로운 주소를 할당.
 
 ### 2. Separate Chaining
-일반적으로 Open Addressing의 경우 채운 밀도가 높아질수록 Worst Case 발생 빈도가 더 높아지기 때문에 Separate Chaining 보다 느리다. 반면 Seperate Chaining의 경우 해시 충돌이 잘 발생하지 않도록 보조 해시 함수를 통해 조정할 수 있다면 Worst Case에 가까워 지는 빈도를 줄일 수 있다. Java 7 에서는 Separate Chaining을 사용하여 HashMap을 구현했다. 데이터의 개수가 따라 두 가지 구현 방식이 존재한다.
+일반적으로 Open Addressing의 경우 채운 밀도가 높아질수록 Worst Case 발생 빈도가 더 높아지기 때문에 Separate Chaining 보다 느리다. 반면 Seperate Chaining의 경우 해시 충돌이 잘 발생하지 않도록 보조 해시 함수를 통해 조정할 수 있다면 Worst Case에 가까워 지는 빈도를 줄일 수 있다. Java 7 에서는 Separate Chaining을 사용하여 HashMap을 구현했다. 데이터의 개수에 따라 두 가지 구현 방식이 존재한다.
 - 연결 리스트를 사용하는 방식 (Linked List)
   - 각각의 버킷들을 연결리스트로 만들어 충돌이 발생하면 해당 bucket의 list에 추가
   - 데이터의 개수가 6개 이하일 때 사용
@@ -45,7 +45,7 @@ Hash는 내부적으로 배열을 사용하여 저장하는 Key와 Value로 이�
   - 트리는 기본적으로 메모리 사용량이 많기 때문에 데이터 개수가 적을 때는 링크드 리스트나 트리와의 성능 차이가 거의 없기 때문에 링크드 리스트를 사용한다.
 
 ### Open Addressing vs Separate Chaining
-일단 두 방식 모두 Worst Case가 O(M)으로 같다. 하지만 Open Addressing은 연속된 공간에 저장하기 때문에 Separate Chaining에 비해 캐시 효율이 높다. 따라서 데이터의 개수가 적다면 Open Addressing이 더 성능이 좋을 수 있다. 대신 Operate Addressing의 경우 버킷을 계속해서 사용하기 때문에 Seperate Chaining 방식이 테이블의 확장을 더 늦출 수 있다.
+일단 두 방식 모두 Worst Case가 O(M)으로 같다. 하지만 Open Addressing은 연속된 공간에 저장하기 때문에 Separate Chaining에 비해 캐시 효율이 높다. 따라서 데이터의 개수가 적다면 Open Addressing이 더 성능이 좋을 수 있다. 하지만 배열의 크기가 커질수록 캐시 효율이라는 Open Addressing의 장점은 사라진다. 또한 Operate Addressing의 경우 버킷을 계속해서 사용하기 때문에 Seperate Chaining 방식이 테이블의 확장을 더 늦출 수 있다.
 
 ### 3. Resizing (동적 확장)
 해시 버킷의 개수가 적다면 메모리 사용을 아낄 수 있겟지만 해시 충돌로 인해 성능 상 손실이 발생한다. 그래서 저장 공간이 75%가 채워지면 저장 공간을 두 배로 늘린다.
@@ -73,4 +73,7 @@ Hash는 내부적으로 배열을 사용하여 저장하는 Key와 Value로 이�
 삭제|O(1)|O(N)|
 
 ---
+참고:
+[https://d2.naver.com/helloworld/831311](https://d2.naver.com/helloworld/831311)
+
 *틀린 부분이 있으면 언제든지 말씀해 주시면 공부해서 수정하겠습니다.
