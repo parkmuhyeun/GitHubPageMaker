@@ -63,6 +63,7 @@ Test Fail -> Test Pass -> refactoring인데 처음부터 다하기 힘들다. �
 
 예를들어 아래의 과정을 한번 보자. 약간 길 수 있지만 제일 중요한 부분이니 시간내서 봐보자.
 - 한 메서드에 오직 한 단계의 들여쓰기(indent)만 한다.
+
 ```java
 public class StringCalcculator {
   public static int splitAndSum(String text){
@@ -106,6 +107,7 @@ private static int sum(String[] values){
 ```
 
 - else 예약어를 쓰지 않는다.
+
 ```java
 public class StringCalcculator {
   public static int splitAndSum(String text){
@@ -153,6 +155,7 @@ private static int sum(String[] values){
 ```
 
 - 메소드가 한 가지 일만 하도록 구현하기
+
 ```java
 public class StringCalcculator {
   public static int splitAndSum(String text){
@@ -279,6 +282,7 @@ private static int sum(int[] numbers){
 자 이렇게 하고나면 add() 메소드를 처음 읽는 사람에게 어느 코드가 더 읽기 좋을까?
 
 Refactoring 하기 전
+
 ```java
 public class StringCalcculator {
   public static int splitAndSum(String text){
@@ -297,6 +301,7 @@ public class StringCalcculator {
 ```
 
 Refactoring 하고난 후
+
 ```java
 public class StringCalcculator {
   public static int add(String text){
