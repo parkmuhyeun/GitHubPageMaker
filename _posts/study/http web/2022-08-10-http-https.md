@@ -35,7 +35,9 @@ HTTPS는 HTTP에 암호화가 추가된 프로토콜이고 HTTP와 다르게 443
 >TLS(Transport Layer Security): SSL와 같은 의미로, TLS가 공식적인 명칭이지만 SSL 이라는 이름이 더 많이 사용되고 있다.
 
 ---
-다음글에 HTTP와 HTTPS의 자세한 동작 과정을 알아보도록 하겠습니다!
+[다음글]에 HTTP와 HTTPS의 자세한 동작 과정을 알아보도록 하겠습니다!
+
+[다음글]:https://parkmuhyeun.github.io/study/http%20web/2022-08-11-http-https-run/
 
 ---
 
