@@ -25,6 +25,7 @@ sitemap: true
 * [Seminar]{:.heading.flip-title}
 * [Database]{:.heading.flip-title}
 * [Operating-System]{:.heading.flip-title}
+* [Precourse]{:.heading.flip-title}
 
 [Data-Structure, Algorithm]: /data-structure-algorithm/
 [Java]: /java/

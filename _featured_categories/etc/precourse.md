@@ -2,7 +2,7 @@
 layout: list
 category: etc
 bigtitle: Precourse
-slug: precousre
+slug: precourse
 
 description: >
   우테코 프리코스
