@@ -31,3 +31,4 @@ sitemap: true
 [Seminar]: /seminar/
 [Database]: /database/
 [Operating-System]: /operating-system/
+[Precourse]: /precourse/

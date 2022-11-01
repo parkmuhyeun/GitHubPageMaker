@@ -88,6 +88,9 @@ menu:
     submenu:
       - title:       Operating System
         url:         /operating-system/
+    submenu:
+      - title:       Precourse
+        url:         /precourse/
   # - title:            Subcat
   #   url:              /subcat/
   #   submenu:
