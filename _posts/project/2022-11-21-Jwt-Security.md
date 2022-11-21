@@ -13,7 +13,7 @@ categories:
 
 >[이전 포스트]에서 JWT가 뭔지, 왜 사용했는지에 대해 포스팅했기 때문에 이번 글에서는 XSS, CSRF, JWT를 저장할 수 있는 방법들에 대해 알아보고 최종적으로 프로젝트에 어떤 걸 적용하였는지 알아보자
 
-[이전 포스트]:(https://parkmuhyeun.github.io/project/2022-09-07-Jwt/)
+[이전 포스트]: https://parkmuhyeun.github.io/project/2022-09-07-Jwt/
 
 ## XSS, CSRF
 먼저 저장하는 방법을 보기 전에 대표적인 웹 취약점 공격 방법인 XSS와 CSRF에 대해 알아보자
