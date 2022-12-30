@@ -89,6 +89,9 @@ menu:
       - title:       Operating System
         url:         /operating-system/
 
+  - title:             우테코 5기
+    url:               /woowacourse/
+
 # Add links to the footer.
 # Typically you'll want to link to your cookie- or privacy policy (if appliable), etc..
 # legal:
