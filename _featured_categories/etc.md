@@ -25,9 +25,11 @@ sitemap: true
 * [Seminar]{:.heading.flip-title}
 * [Database]{:.heading.flip-title}
 * [Operating-System]{:.heading.flip-title}
+* [회고]{:.heading.flip-title}
 
 [Data-Structure, Algorithm]: /data-structure-algorithm/
 [Java]: /java/
 [Seminar]: /seminar/
 [Database]: /database/
 [Operating-System]: /operating-system/
+[회고]: /reminiscence/

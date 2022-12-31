@@ -88,9 +88,15 @@ menu:
     submenu:
       - title:       Operating System
         url:         /operating-system/
+    submenu:
+      - title:       회고
+        url:         /reminiscence/
 
   - title:             우테코 5기
     url:               /woowacourse/
+    submenu:
+      - title:       회고
+        url:         /reminiscence/
 
 # Add links to the footer.
 # Typically you'll want to link to your cookie- or privacy policy (if appliable), etc..
