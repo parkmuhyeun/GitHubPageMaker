@@ -48,8 +48,10 @@ categories:
     - 특히 4번 부분이 정말 중요한 것 같다. 5시간 안에 빠르게  구현하려면 값들을 확인할 때 디버깅 기능을 많이 사용하는데 테스트해 본 결과 기본 설정인 gradle로 진행하게 되면 매 디버깅마다 20초 정도 기다려야 되지만 intellij IDEA로 했을 때 3초 만에 가능했기 때문에 이것이 쌓이고 쌓이면 엄청 크게 작용할 것이라 생각했다.
 2. 구현 기능 목록 포맷: 미리 구현 기능을 작성할 때 Format을 준비해놨다.
   ![](/assets//img/blog/woowacourse/ft_4.png)
-3. 문제 제출: 제일 중요한 제출 부분때 실수할까 적어놓음
-  ![](/assets//img/blog/woowacourse/ft_5.png)
+3. 문제 제출
+  - 제일 중요한 제출 부분때 실수할까 적어놓음
+
+    ![](/assets//img/blog/woowacourse/ft_5.png)
 4. 자주 사용할 수 있는 코드 준비
     - Try Catch
       ```java
