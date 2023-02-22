@@ -2,7 +2,7 @@
 layout: post
 title: 디자인 패턴 - 전략 패턴, 템플릿 메서드 패턴, 상태 패턴
 subtitle: 부제목 예시
-tags: design-pattern strategy template state
+tags: design-pattern strategy template-method state
 description: >
   Let's learn strategy, template method, state pattern
 sitemap: true
