@@ -8,13 +8,13 @@ description: >
 sitemap: true
 hide_last_modified: true
 categories:
-  - etc
+  - study
   - design pattern
 ---
 
 ## 디자인 패턴에 대해 관심을 가진 이유
 
-![](/assets//img/blog/etc/design%20pattern/dp(1)_1.jpg)
+![](/assets//img/blog/study/design%20pattern/dp(1)_1.jpg)
 
 프리코스부터 시작해서 현재 우테코 미션을 진행하다 보니 어느 순간 계속해서 같은 형태의 코드만 양산하고 있는 듯한 느낌이 들었다. 기능을 정의하고 mvc 패턴에 따라 클린 코드, 객체지향 법칙을 적용하며 코드를 작성한다.. 라 매번 이렇게 같은 방식에 약간 재미도 없어지고 뭔가 어떻게 하면 더 성장할 수 있을까 고민에 빠지게 되었다.
 
@@ -55,7 +55,7 @@ public class Calculator {
 
 그럼 어떻게 하면 좋을까?? 이때 전략 패턴을 적용해 볼 수 있다. 각각의 가격 할인 정책을 전략으로 두고 별도 객체로 분리하는 것이다. 아래와 같이 분리하면 Calculator라는 콘텍스트에서는 전략을 직접 선택하지 않고 클라이언트에서 DI(의존 주입)를 이용해 전략을 전달해 줄 수 있다.
 
-![](/assets//img/blog/etc/design%20pattern/dp(1)_2.png)
+![](/assets//img/blog/study/design%20pattern/dp(1)_2.png)
 
 그러면 다음과 같이 코드를 작성할 수 있을 것이다.
 ```java
@@ -217,7 +217,7 @@ public class VendingMachine {
 
 그러면 어떻게 해야 될까..? 위의 코드를 보면 각 상태에 따라 다르게 기능들이 동작하는 걸 볼 수 있다. 이렇게 기능이 상태에 따라 다르게 동작해야 할 때 사용할 수 있는 패턴이 상태 패턴이다. 상태 패턴에서는 아래와 같이 상태를 별도로 분리하고 각 상태별로 맞는 하위 타입을 구현한다.
 
-![](/assets//img/blog/etc/design%20pattern/dp(1)_3.png)
+![](/assets//img/blog/study/design%20pattern/dp(1)_3.png)
 
 >근데 이렇게 보다 보니깐 전략 패턴과 상태 패턴이 서로 헷갈렸다. 둘이 공통의 인터페이스로 분리한 후 각각의 상황에 맞게 기능을 구현하는 거까지 비슷하다 보니.. 전략 패턴은 한 번 인스턴스를 생성하고 나면, 상태가 거의 바뀌지 않는 경우에 사용하고 상태 패턴은 한 번 인스턴스를 생성하고 난 뒤, 상태를 바꾸는 경우가 잦은 경우에 사용할 수 있다!
 

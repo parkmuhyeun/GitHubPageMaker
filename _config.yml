@@ -70,6 +70,9 @@ menu:
     submenu:
       - title:       IT Infra
         url:         /it-infra/
+    submenu:
+      - title:       Design Pattern
+        url:         /design-pattern
         
   - title:             Etc
     url:               /etc/
@@ -91,9 +94,6 @@ menu:
     submenu:
       - title:       회고
         url:         /reminiscence/
-    submenu:
-      - title:       Design Pattern
-        url:         /design-pattern
 
   - title:             우테코 5기
     url:               /woowacourse/

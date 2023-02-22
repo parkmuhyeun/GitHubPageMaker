@@ -26,7 +26,6 @@ sitemap: true
 * [Database]{:.heading.flip-title}
 * [Operating-System]{:.heading.flip-title}
 * [회고]{:.heading.flip-title}
-* [Design-Pattern]{:.heading.flip-title}
 
 [Data-Structure, Algorithm]: /data-structure-algorithm/
 [Java]: /java/
@@ -34,4 +33,3 @@ sitemap: true
 [Database]: /database/
 [Operating-System]: /operating-system/
 [회고]: /reminiscence/
-[Design-Pattern]: /design-pattern/

@@ -10,5 +10,5 @@ description: >
 related_posts:
     - 
 list: true
-order: 7
+order: 6
 ---
