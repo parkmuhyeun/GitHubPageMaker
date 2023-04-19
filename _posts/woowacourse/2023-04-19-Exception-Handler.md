@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Exception Handler는 어떤 원리로 처리되는걸까?
+title: Exception Handler는 어떤 원리로 작동하는가
 subtitle: 부제목 예시
 tags: woowacourse spring exception-handler resolver
 description: >
