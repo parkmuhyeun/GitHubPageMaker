@@ -50,8 +50,8 @@ author:
 menu:
   - title:             About
     url:               /about/
-  - title:             Project
-    url:               /project/
+  # - title:             Project
+  #   url:               /project/
     
   - title:             Study
     url:               /study/
@@ -94,6 +94,9 @@ menu:
     submenu:
       - title:       Design Pattern
         url:         /design-pattern/
+    submenu:
+      - title:       project
+        url:         /project/
 
   - title:             우테코 5기
     url:               /woowacourse/
