@@ -4,7 +4,7 @@ title: 여러 서비스에서 트랜잭션을 어떻게 보장해줄 수 있을�
 subtitle: 부제목 예시
 tags: seminar minimize-dependency external-service
 description: >
- Minimize impact from external services (2)
+ How can transactions be guaranteed across multiple services
 sitemap: true
 hide_last_modified: true
 categories:

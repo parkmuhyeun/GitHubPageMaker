@@ -4,7 +4,7 @@ title: 외부 서비스로부터 영향 범위 최소화하기 (1)
 subtitle: 부제목 예시
 tags: seminar minimize-dependency external-service
 description: >
- Minimize impact from external services (1)
+ Minimize impact from external services
 sitemap: true
 hide_last_modified: true
 categories:
