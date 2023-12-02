@@ -124,6 +124,6 @@ curl https://checkout-test.adyen.com/v70/payments \
 - [애플 한 주가 고객에게 전달 되기까지](https://www.youtube.com/watch?v=UOWy6zdsD-c)
 - [adyen Docs](https://docs.adyen.com/development-resources/api-idempotency/)
 - [Exponential backoff](https://en.wikipedia.org/wiki/Exponential_backoff)
-- 갓누누 (_ㅇ_)
+- 갓누누 (\_ㅇ\_)
 
 *오타가 있거나 피드백 주실 부분이 있으면 편하게 말씀해 주세요.
