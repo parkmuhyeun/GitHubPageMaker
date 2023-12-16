@@ -100,7 +100,7 @@ PLATFORMS
   x64-mingw32
 
 DEPENDENCIES
-  bundler
+  bundler (= 2.4.22)
   coderay (~> 1.1.0)
   duktape
   jekyll (~> 4.1)
@@ -117,8 +117,5 @@ DEPENDENCIES
   tzinfo-data
   wdm
 
-RUBY VERSION
-   ruby 2.6.6p146
-
 BUNDLED WITH
-   2.3.5
+   2.4.22

@@ -8,8 +8,7 @@ source "https://rubygems.org"
 #
 # This will help ensure the proper Jekyll version is running.
 # Happy Jekylling!
-ruby '2.6.6'
-gem 'bundler'
+gem 'bundler', '2.4.22'
 gem "jekyll", "~> 4.1"
 gem "rake", "~> 13.0.3"
 
