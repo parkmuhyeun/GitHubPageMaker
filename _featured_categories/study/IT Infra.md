@@ -5,7 +5,7 @@ bigtitle: IT Infra
 slug: it infra
 
 description: >
-  IT 인프라 구조
+  IT 인프라
 
 related_posts:
     - 
